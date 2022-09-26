@@ -18,3 +18,5 @@ person:
     angry:
       - name: angryPet
         age: 100
+server:
+  port: 8088
