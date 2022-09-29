@@ -1,20 +1,14 @@
 package com.fan.mybatisPlus.service;
 
-import com.fan.mybatisPlus.mapper.UserMapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.fan.mybatisPlus.pojo.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
+/**
+ * @author: fc
+ * @date: 2022/9/29 12:44
+ */
+public interface UserService extends IService<User> {
 
-@Service
-public class UserService {
-
-    @Autowired
-    UserMapper userMapper;
-
-    public List<User> getUsers(){
-        List<User> users = userMapper.selectList(null);
-        return users;
-    }
 }

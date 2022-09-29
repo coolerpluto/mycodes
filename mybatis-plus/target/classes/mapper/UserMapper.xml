@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fan.mybatisPlus.mapper.UserMapper">
+
+
+    <sql id="baseColumns"> id, name, age, email</sql>
+
+    <select id="selectPageVo" resultType="User">
+        select <include refid="baseColumns"></include> from t_user where
+        age > #{age}
+    </select>
+</mapper>

@@ -1,8 +1,7 @@
 package com.fan.mybatisPlus.pojo;
 
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class User {
 
-    private Long id;
+
+    @TableId(value = "id", type = IdType.AUTO)
+    private Long uid;
 
     private String name;
 
@@ -20,4 +21,13 @@ public class User {
 
     private String email;
 
+    @TableLogic
+    private Integer isDeleted;
+
+    public User(Long uid, String name, Integer age, String email) {
+        this.uid = uid;
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
 }
