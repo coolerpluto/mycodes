@@ -1,9 +1,0 @@
-com\fan\mybatisPlus\config\Myconfig.class
-com\fan\mybatisPlus\controller\HelloController.class
-com\fan\mybatisPlus\service\iml\UserServiceImpl.class
-com\fan\mybatisPlus\MybatisPlusSpringbootApplication.class
-com\fan\mybatisPlus\service\MyUserService.class
-com\fan\mybatisPlus\controller\UserController.class
-com\fan\mybatisPlus\pojo\User.class
-com\fan\mybatisPlus\service\UserService.class
-com\fan\mybatisPlus\mapper\UserMapper.class

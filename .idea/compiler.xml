@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-plus" />
         <module name="springboot" />
+        <module name="spring" />
         <module name="java" />
       </profile>
     </annotationProcessing>

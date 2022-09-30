@@ -42,6 +42,7 @@
         <module>java</module>
         <module>springboot</module>
         <module>mybatis-plus</module>
+        <module>spring</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -14,10 +14,7 @@ package com.fan.exception;
  *
  */
 
-import com.fan.pojo.Animal;
-
 import java.io.File;
-import java.io.InputStream;
 
 /**
  * @author: fc
